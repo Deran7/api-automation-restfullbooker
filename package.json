@@ -1,0 +1,32 @@
+{
+  "name": "api-automation-restfullbooker",
+  "version": "1.0.0",
+  "description": "API Automation Restfullbooker used mocha and chai",
+  "main": "index.js",
+  "repository": "https://github.com/Deran7/api-automation-restfullbooker.git",
+  "author": "Alderan Robi <alderanrobiaulia@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "axios": "^1.3.2",
+    "chai": "^4.3.7",
+    "chai-json-schema": "^1.5.1",
+    "dotenv": "^16.0.3",
+    "link-module-alias": "^1.2.0",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3"
+  },
+  "type": "module",
+  "scripts": {
+    "postinstall": "link-module-alias",
+    "preinstall": "command -v link-module-alias && link-module-alias clean || true",
+    "mocha:run": "mocha tests/scenarios --"
+  },
+  "_moduleAliases": {
+    "$root": "tests",
+    "$helpers": "tests/helpers",
+    "$data": "tests/data",
+    "$pages": "tests/pages",
+    "$schema": "tests/schema"
+  }
+}
