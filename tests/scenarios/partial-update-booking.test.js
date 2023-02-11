@@ -8,7 +8,7 @@ chai.use(jsonSchema)
 
 describe('Partial update booking positif case', () => {
 
-    it('Should success patrial update booking data with valid booking id', async () => {
+    it('Should success partial update booking data with valid booking id', async () => {
         const response = await bookingApi.partialUpdateBooking(3, data.PARTIAL_UPDATE_BOOKING)
 
         assert.equal(response.status, 200)
