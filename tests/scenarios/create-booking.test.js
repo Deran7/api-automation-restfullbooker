@@ -11,8 +11,6 @@ describe ('Create new booking positif case',() => {
     it('Successfull Create New Booking', async () => {
         const response = await bookingApi.createBooking(data.VALID_CREATE_BOOKING)
 
-        console.log(response.data.bookingid, "============");
-
         assert.equal(response.status, 200)
         expect(response.data).to.be.jsonSchema(schema.VALID_CREATE_BOOKING_RESPONSE_SCHEMA)
     

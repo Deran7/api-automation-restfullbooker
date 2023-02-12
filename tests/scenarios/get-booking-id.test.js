@@ -12,7 +12,7 @@ describe ( 'Get list booking by id positif case',() => {
 
 describe ( 'Get list booking by id negatif case',() => {
 
-    it('Get list booking by id not registed', async () => {
+    it('Get list booking by id unregistered', async () => {
         const response = await bookingAPI.getBookingId(98298)
 
         assert.equal(response.status, 404)
