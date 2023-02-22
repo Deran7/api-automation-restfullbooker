@@ -9,7 +9,7 @@ Test Case in Qase.io       : https://app.qase.io/project/AR
 ### Step to reproduce :
 1. Open terminal and clone this repository 
 ```bash
-git clone https://github.com/grellylucia/restful-booker-api-test.git   
+git clone https://github.com/Deran7/api-automation-restfullbooker.git  
 ```
 2. Copy file `.env.example` and change the file name to `.env`
 3. Run command `yarn` in terminal (inside the project)
